@@ -1,0 +1,52 @@
+<main class="page-shell">
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="FixIt Campus home">
+      <span class="brand-mark">F</span>FixIt <span>Campus</span>
+    </a>
+    <span class="campus-label">CAMPUS SERVICES</span>
+  </header>
+
+  <section class="welcome">
+    <p class="eyebrow">A BETTER CAMPUS, TOGETHER</p>
+    <h1>Keep campus<br><span>running smoothly.</span></h1>
+    <p class="intro">Report a problem, follow its progress, and help make every space work better for everyone.</p>
+    <div class="actions">
+      <a class="button primary" href="/swagger" target="_blank" rel="noreferrer">
+        Explore the API <span aria-hidden="true">↗</span>
+      </a>
+      <a class="button secondary" href="#about">How it works</a>
+    </div>
+  </section>
+
+  <section class="status-card" aria-live="polite">
+    <span class="status-dot" [class.online]="health.state() === 'online'" [class.offline]="health.state() === 'offline'"></span>
+    <div>
+      <strong>System status</strong>
+      <p>{{ statusMessage }}</p>
+    </div>
+    <span class="status-value">{{ health.state() }}</span>
+  </section>
+
+  <section class="features" id="about">
+    <article>
+      <span class="feature-number">01</span>
+      <h2>Report an issue</h2>
+      <p>Tell us what needs attention in a room or shared campus space.</p>
+    </article>
+    <article>
+      <span class="feature-number">02</span>
+      <h2>Track progress</h2>
+      <p>See updates as the campus team works through each request.</p>
+    </article>
+    <article>
+      <span class="feature-number">03</span>
+      <h2>Make a difference</h2>
+      <p>Help keep facilities safe, comfortable, and ready to use.</p>
+    </article>
+  </section>
+
+  <footer>
+    <span>FixIt Campus</span>
+    <span>Built for a campus that works.</span>
+  </footer>
+</main>

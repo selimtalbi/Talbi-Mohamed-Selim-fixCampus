@@ -30,5 +30,46 @@ frontend/, backend/, docs/, rapport/, presentation/, docker-compose.yml, .env.ex
 - testing: unit tests and API checks
 - devops: Docker, docker-compose, GitHub
 
+## Design Philosophy
+
+Ce projet suit une esthétique inspirée d'Apple.
+
+### UI Principles
+- Minimaliste et élégante
+- Beaucoup d'espace blanc
+- Hiérarchie visuelle claire
+- Interface premium
+- Lisibilité maximale
+- Pas de surcharge visuelle
+
+### Typography
+- SF Pro Display pour les titres
+- SF Pro Text ou Inter pour le contenu
+- Font weights: 400, 500, 600
+
+### Colors
+- #FFFFFF
+- #F5F5F7
+- #1D1D1F
+- #6E6E73
+
+### Components
+- Coins arrondis entre 12px et 20px
+- Ombres très légères
+- Animations fluides et subtiles
+- Design mobile-first
+
+### Avoid
+- Style Bootstrap
+- Dashboards SaaS génériques
+- Couleurs fluo
+- Ombres lourdes
+- Trop de cartes
+- Trop de boutons
+
+### Frontend Requirement
+Chaque composant doit sembler conçu par Apple :
+clean, minimal, premium et cohérent.
+
 ## Working rule
 Before coding a feature: state the plan in a few lines, create the feature/... branch, code, test, then propose the commit.

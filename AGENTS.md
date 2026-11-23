@@ -5,7 +5,7 @@ Individual project for the Angular Development module. Campus fault management a
 The student must be able to explain and justify ALL the code in the defense: write simple, readable code, comment when useful, and briefly explain your choices.
 
 ## Stack
-- Frontend: Angular 19/20, standalone components, Signals (signal, computed)
+- Frontend: Angular 24, standalone components, Signals (signal, computed)
 - Backend: Node/Express, swagger-jsdoc + swagger-ui-express (route /swagger)
 - Database: PostgreSQL
 - Deployment: Docker (docker compose up --build)

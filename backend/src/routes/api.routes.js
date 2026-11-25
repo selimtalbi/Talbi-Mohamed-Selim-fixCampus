@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import { getApiInfo } from '../controllers/api.controller.js';
 import { healthRoutes } from './health.routes.js';
+import { authRoutes } from './auth.routes.js';
 
 export const apiRoutes = Router();
 
@@ -15,3 +16,4 @@ export const apiRoutes = Router();
  */
 apiRoutes.get('/', getApiInfo);
 apiRoutes.use('/health', healthRoutes);
+apiRoutes.use('/auth', authRoutes);

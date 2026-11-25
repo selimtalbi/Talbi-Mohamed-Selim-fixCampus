@@ -19,7 +19,16 @@ const swaggerSpec = swaggerJSDoc({
       version: '1.0.0',
       description: 'API for campus maintenance services.'
     },
-    servers: [{ url: 'http://localhost:5000' }]
+    servers: [{ url: 'http://localhost:5000' }],
+    components: {
+      securitySchemes: {
+        bearerAuth: {
+          type: 'http',
+          scheme: 'bearer',
+          bearerFormat: 'JWT'
+        }
+      }
+    }
   },
   apis: ['./src/routes/*.routes.js']
 });
